@@ -7,8 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href= "#" class="brand">Friend Zone</a>
+				<ul class="nav">
+					<li> <%= link_to "Status Feed", statuses_path %></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
 
+<div class="container">	
 <%= yield %>
+</div>
 
 </body>
 </html>
